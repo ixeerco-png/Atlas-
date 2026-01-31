@@ -2,20 +2,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجري البسيط</title>
+    <title>متجر دروب شوب الاحترافي</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <div class="max-w-md mx-auto bg-white shadow-lg rounded-xl overflow-hidden mt-10">
-        <img class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Product">
-        <div class="p-6">
-            <h2 class="font-bold text-2xl text-gray-800">ساعة ذكية Ultra</h2>
-            <p class="text-gray-600 mt-2">أفضل ساعة للدروب شيبينغ في 2026. جودة عالية وسعر منافس.</p>
-            <div class="mt-4 flex justify-between items-center">
-                <span class="text-3xl font-bold text-blue-600">$49.99</span>
-                <a href="رابط-دفع-سترايب-هنا" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">شراء الآن</a>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">درب شوب</h1>
+            <div class="flex items-center gap-4">
+                <span class="text-sm text-gray-500">شحن مجاني لفترة محدودة 🚚</span>
             </div>
         </div>
-    </div>
+    </header>
+
+    <section class="bg-blue-600 text-white py-12 px-4 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">اكتشف أفضل المنتجات العصرية</h2>
+        <p class="text-blue-100 text-lg">جودة عالية، توصيل سريع، ودفع آمن</p>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="منتج 1" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">الأكثر مبيعاً</span>
+                    <h3 class="text-xl font-bold mt-2">حذاء رياضي Speed Pro</h3>
+                    <p class="text-gray-500 text-sm mt-2">تصميم مريح وأنيق مناسب لجميع الأنشطة الرياضية.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$59.00</span>
+                        <a href="ضع_رابط_دفع_سترايب_هنا" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700">شراء الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="منتج 2" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <span class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded">جديد</span>
+                    <h3 class="text-xl font-bold mt-2">سماعات رأس Bose Wireless</h3>
+                    <p class="text-gray-500 text-sm mt-2">نظام عزل ضوضاء متطور مع بطارية تدوم 40 ساعة.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$89.00</span>
+                        <a href="ضع_رابط_دفع_سترايب_هنا" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700">شراء الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="منتج 3" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mt-2">ساعة Ultra Smart</h3>
+                    <p class="text-gray-500 text-sm mt-2">شاشة AMOLED عالية الدقة وتتبع ذكي للصحة.</p>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="text-2xl font-bold text-blue-600">$45.00</span>
+                        <a href="ضع_رابط_دفع_سترايب_هنا" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold hover:bg-blue-700">شراء الآن</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-4">جميع الحقوق محفوظة © 2026 درب شوب</p>
+            <div class="flex justify-center gap-6 text-gray-400">
+                <span>سياسة الاسترجاع</span>
+                <span>تواصل معنا</span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
